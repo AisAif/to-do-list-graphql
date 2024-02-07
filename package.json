@@ -1,0 +1,30 @@
+{
+  "name": "to-do-list-graphql",
+  "version": "1.0.0",
+  "description": "To do list - GraphQL API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AisAif/to-do-list-graphql.git"
+  },
+  "keywords": [
+    "todolist",
+    "graphql",
+    "api",
+    "backend"
+  ],
+  "author": "Abdullah Isbarul Fahmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AisAif/to-do-list-graphql/issues"
+  },
+  "homepage": "https://github.com/AisAif/to-do-list-graphql#readme",
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "graphql": "^16.8.1",
+    "mongoose": "^8.1.1"
+  }
+}
