@@ -5,6 +5,9 @@ export default {
         getAllTodos: async () => {
             return await TodoModel.find();
         },
+        getTodo: async (_, args) => {
+            return await TodoModel.findById(args.id);
+        }
     },
     Mutation: {
         createTodo: async (_, args) => {

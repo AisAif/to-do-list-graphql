@@ -12,6 +12,7 @@ const typeDefs = gql`
 
     type Query {
         getAllTodos: [Todo]!,
+        getTodo(id: ID!): Todo
     }
 
     type Mutation {
