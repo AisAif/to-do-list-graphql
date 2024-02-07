@@ -10,6 +10,11 @@ export default {
         createTodo: async (_, args) => {
             const todo = new TodoModel(args);
             return await todo.save();
+        },
+        updateTodo: async (_, args) => {
+            args.updated_at = Date.now();
+            const todo = await TodoModel.findByIdAndUpdate(args.    id, args, { new: true });
+            return todo;
         }
     }
 }
