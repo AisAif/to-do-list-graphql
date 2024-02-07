@@ -13,6 +13,10 @@ const typeDefs = gql`
     type Query {
         getAllTodos: [Todo]!,
     }
+
+    type Mutation {
+        createTodo(title: String!, description: String): Todo!,
+    }
 `
 
 export default typeDefs
