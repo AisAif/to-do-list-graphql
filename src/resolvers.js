@@ -13,8 +13,12 @@ export default {
         },
         updateTodo: async (_, args) => {
             args.updated_at = Date.now();
-            const todo = await TodoModel.findByIdAndUpdate(args.    id, args, { new: true });
+            const todo = await TodoModel.findByIdAndUpdate(args.id, args, { new: true });
             return todo;
+        },
+        deleteTodo: async (_, args) => {
+            const todo = await TodoModel.findByIdAndDelete(args.id);
+            return todo ? true : false;
         }
     }
 }
